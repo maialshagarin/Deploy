@@ -10,10 +10,6 @@ const commentsRouter = require('./routers/routes/comments');
 const roleRouter = require('./routers/routes/role');
 
 const app = express();
-
-const path = require('path');
-app.use(express.static(path.resolve(__dirname, './client/build')));
-
 //built-in middleware
 app.use(express.json());
 
